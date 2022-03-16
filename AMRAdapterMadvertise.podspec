@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'AMRAdapterMadvertise'
+  s.name             = 'AMRAdapterMadvertise-Beta'
   s.version          = '4.0.0.1'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 														Copyright 2016
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.2'
   s.vendored_frameworks = "AMRAdapterMadvertise/Libs/AMRAdapterMadvertise.xcframework","AMRAdapterMadvertise/Libs/BlueStackSDK.xcframework","AMRAdapterMadvertise/Libs/OMSDK_Madvertise.xcframework"
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
-  s.dependency 'AMRSDK', '~> 1.5.0'
+  s.dependency 'AMRSDK-Beta', '~> 1.5.11'
 end
