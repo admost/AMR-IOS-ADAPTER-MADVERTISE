@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AMRAdapterMadvertise'
-  s.version          = '4.1.3.1'
+  s.version          = '4.1.8.0'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 														Copyright 2016
 														Admost Mediation Limited. 
@@ -17,8 +17,9 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://admost.github.io/amrios/'
   s.platform 			= :ios
   s.ios.deployment_target = '12.2'
+  s.swift_versions = ['5']
   s.vendored_frameworks = "AMRAdapterMadvertise/Libs/AMRAdapterMadvertise.xcframework"
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
   s.dependency 'AMRSDK', '~> 1.5.0'
-  s.dependency 'Bluestack-SDK-Core', '4.1.3'
+  s.dependency 'Bluestack-SDK-Core', '4.1.8'
 end
