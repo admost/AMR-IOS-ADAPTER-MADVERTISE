@@ -3,6 +3,10 @@
 Changelog for AMRAdapterMadvertise. 
 BlueStack-SDK [changelog](https://bitbucket.org/mngcorp/mngads-demo-ios/wiki/Home)
 
+## [4.1.8.3] - 2023-10-09
+### Updated
+- Debug logs added for location.
+
 ## [4.1.8.2] - 2023-10-06
 ### Updated
 - Location support updated.
