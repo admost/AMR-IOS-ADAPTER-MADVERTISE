@@ -19,7 +19,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.2'
   s.swift_versions = ['5']
   s.vendored_frameworks = "AMRAdapterMadvertise/Libs/AMRAdapterMadvertise.xcframework"
-  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
+  s.pod_target_xcconfig = {
+    "VALID_ARCHS": "arm64 x86_64",
+    'VALID_ARCHS[sdk=iphoneos*]' => 'arm64',
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64'
+  }
   s.dependency 'AMRSDK', '~> 1.5.33'
   s.dependency 'Bluestack-SDK-Core', '4.1.8'
 end
